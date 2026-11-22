@@ -1,6 +1,6 @@
 ---
 name: Prompt Doctor
-description: Rewrite a rough, vague or over-stuffed request into a prompt the current model or agent can act on. Use when the user asks to improve, critique or rewrite a prompt, or sends a draft before pasting it into another AI.
+description: Rewrite a rough, vague or over-stuffed request into a prompt the current model or agent can act on, and explain a jargon-heavy agent reply in plain words. Use when the user asks to improve, critique or rewrite a prompt, sends a draft before pasting it into another AI, or says "nutshell this" about a reply.
 ---
 
 # Prompt Doctor (manual edition)
@@ -79,6 +79,22 @@ placeholder and say how many there are.
 - **Agentic coding** (OpenCode, Claude Code, Cursor, Kimi Code, Devstral): file paths, the
   command that reproduces, an observable definition of done, what must not change, and an
   approval boundary for destructive actions only. Drop mock code and permission loops.
+
+## Nutshell mode
+
+Trigger: the user pastes a reply from another agent and says "nutshell this", "explain what
+it just said", or "what does this mean".
+
+Do **not** continue the original task. Explain the reply, in exactly this shape:
+
+1. **In a nutshell** - at most 3 plain sentences. No new jargon; if a term cannot be
+   avoided, define it in everyday words in the same sentence.
+2. **Analogy** - one everyday comparison (cooking, driving, mail, plumbing). One line.
+3. **What it means for you** - one line: can it be ignored, or must the user act?
+4. **What to do next** - one line, only when action is needed. Omit it otherwise.
+
+Hard rules for this mode: never invent facts about the user's project; never add new
+tasks; if the reply is already plain, say so in one line and skip the analogy.
 
 ## Hard rules
 

@@ -61,6 +61,13 @@ Send your agent a draft, or ask:
 The skill loads and follows the workflow. It works on any draft, not just coding ones —
 emails, briefs, research questions, agent instructions.
 
+## Nutshell mode
+
+Paste an agent's reply and say **"nutshell this"**. The skill stops working on the task and
+explains the reply in at most 3 plain sentences, adds one everyday analogy, says in one
+line whether you must act, and one line on what to do next if so. No new jargon, no new
+tasks, no invented facts.
+
 ## Try it without installing
 
 Paste this into a ChatGPT Project, Claude Project or Gemini Gem once, and it reviews
@@ -75,6 +82,9 @@ effort bounds, hidden assumptions, filler, kitchen sink.
 If two or more fail: list the missing pieces (max 3, one line each), give me a rewritten
 prompt in a code block, then ask "Send the rewritten prompt, or answer the original?".
 If nothing important fails, answer normally. Never invent details about my project.
+
+When I paste an agent's reply and say "nutshell": explain it in at most 3 plain sentences,
+no new jargon, add one everyday analogy, and say in one line whether I need to act.
 ```
 
 ## Manual edition
