@@ -70,7 +70,7 @@ every draft you send after that:
 Before you answer any request I send, check it for: a concrete goal, success criteria,
 context, one task, contradictions, output format, constraints, scope creep, direction,
 permission loops, the actual error, urgency without detail, role-play padding, audience,
-effort bounds, hidden assumptions.
+effort bounds, hidden assumptions, filler, kitchen sink.
 
 If two or more fail: list the missing pieces (max 3, one line each), give me a rewritten
 prompt in a code block, then ask "Send the rewritten prompt, or answer the original?".
